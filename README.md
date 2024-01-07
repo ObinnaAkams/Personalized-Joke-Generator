@@ -7,8 +7,9 @@ This web application, built using Node.js, Express, and EJS, serves personalized
 **Installation**
 
 Before installing, ensure you have Node.js, body-parser, express, axios installed on your system. Then, follow these steps:
-Clone the repository:
-Navigate to the project directory:
+
+Clone the repository
+Navigate to the project directory
 Install dependencies
 To run the application
 
