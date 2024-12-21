@@ -38,6 +38,6 @@ EJS Templating: Utilizes EJS for dynamic content rendering based on user input.
 
 The JokeAPI (https://v2.jokeapi.dev/joke/Programming) is used for fetching programming-related jokes. The API is configured to exclude NSFW and sexist jokes.
 
-**Project Files*
+**Project Files**
 
 Please switch to master branch to see project file.
