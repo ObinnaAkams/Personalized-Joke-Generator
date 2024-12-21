@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Jokes</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" id="home-tab">Home</a></li>
+            <li><a href="#" id="contact-tab">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Programming Jokes</h1>
+        <form action="/submit" method="POST">
+            <label for="name">Enter your name:</label>
+            <input type="text" name="users-name" id="name" placeholder="Your Name" required>
+            <input type="submit" value="Submit" id="submit-tab">
+        </form>
+        <div id="joke-container">
+            <% if (locals.Name) { %>
+                <h2><%= Name %>, there you go:</h2>
+                <ul>
+                    <li id="joke1"><%=Joke1%></li>
+                    <li><%=Joke2%></li>
+                </ul> 
+            <%} else { %>
+                <h3>Two programming-related jokes waiting for you, but enter your name first</h3>
+            <% } %>
+        </div>
+    </div>
+    <footer>
+        <p>Made with JokeAPI</p>
+        <p>Copyright © <%= new Date().getFullYear() %></p>
+    </footer>
+</body>
+</html>
